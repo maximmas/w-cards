@@ -1,18 +1,28 @@
 import React, {Component} from 'react'
-import  classes from './Card.css'
+import classes from './Card.css'
 
-export default class Card  extends Component {
+export default class Card extends Component {
 
-    constructor(props){
-        // console.log(props)
+    constructor(props) {
         super(props)
         this.state = {
             isClicked: false,
-            text: this.props.text_orig
+            text: this.props.text_orig,
+            isRefresh: this.props.isRefresh
         }
     }
 
-    onCardClickHandler(event){
+    componentWillReceiveProps() {
+        if ( this.state.isRefresh !== this.props.isRefresh){
+            this.setState({
+                isRefresh: this.props.isRefresh,
+                text: this.props.text_orig,
+                isClicked: false,
+            })
+        }
+    }
+
+    onCardClickHandler(event) {
         let text = (this.state.isClicked) ? this.props.text_orig : this.props.text_trans
         this.setState({
             isClicked: !this.state.isClicked,
@@ -20,18 +30,17 @@ export default class Card  extends Component {
         })
     }
 
-    render(){
+    render() {
         let cls = [classes.Card]
-        if(this.state.isClicked) {
+        if (this.state.isClicked) {
             cls.push(classes['clicked'])
         }
-
         return (
             <div
                 className={cls.join(' ')}
-                onClick={()=>this.onCardClickHandler()}                
+                onClick={() => this.onCardClickHandler()}
             >
-            {this.state.text}
+                {this.state.text}
             </div>
         )
     }
