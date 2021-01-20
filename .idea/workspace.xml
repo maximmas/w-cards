@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b8c05a-a801-4635-b601-d1b9647ac487" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AddCardButton/AddCardButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AddCardButton/AddCardButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NextCardsButton/NextCardsButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NextCardsButton/NextCardsButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo/Logo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Footer/Footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Header/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddCardButton/AddCardButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hamburger/Hamburger.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddCardButton/AddCardButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hamburger/Hamburger.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Cards/Cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Cards/Cards.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Cards/Cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Cards/Cards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
@@ -32,7 +32,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lL3aGS3D8iAk6glGYpmTLboc9C" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,7 +72,8 @@
       <workItem from="1610348203450" duration="516000" />
       <workItem from="1610891724861" duration="5174000" />
       <workItem from="1610911009016" duration="35000" />
-      <workItem from="1610993745822" duration="4785000" />
+      <workItem from="1610993745822" duration="4913000" />
+      <workItem from="1611165049212" duration="4620000" />
     </task>
     <servers />
   </component>

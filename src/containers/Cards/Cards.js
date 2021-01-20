@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import classes from './Cards.css'
 import Card from '../../components/Card/Card'
 import NextCardsButton from '../../components/NextCardsButton/NextCardsButton'
-import AddCardButton from '../../components/AddCardButton/AddCardButton'
+import Hamburger from '../../components/Hamburger/Hamburger'
 
 import axios from 'axios'
 
@@ -68,7 +68,7 @@ class Cards extends Component {
     render() {
         return (
             <div className={classes.Cards}>
-                <AddCardButton addCard={this.onAddCard}/>
+                {/*<Hamburger addCard={this.onAddCard}/>*/}
                 <div className={classes.Cards_content}>
                     {this.renderCards()}
                 </div>

@@ -1,5 +1,12 @@
 .Cards{
-    max-width: 1200px;
+    /*max-width: px;*/
+    min-height: calc(100vh - 80px);
+    /*background-color: antiquewhite;*/
+    /*margin-top: -40px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .Cards_content{
     display: flex;

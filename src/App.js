@@ -1,29 +1,19 @@
 import React, {Component} from 'react'
+import classes from './App.css'
 import Cards from './containers/Cards/Cards'
-import Mmenu from 'mmenu-js'
+//import Mmenu from 'mmenu-js'
+import Header from './containers/Header/Header'
+import Footer from './containers/Footer/Footer'
 
 class App extends Component {
 
-    // constructor(props) {
-    //     super(props)
-    //     // this.state = {
-    //     //     isClicked: false,
-    //     //     text: this.props.text_orig,
-    //     // }
-    // }
-
-    componentDidMount() {
-        // console.log('AAA')
-        // document.addEventListener(
-        //     "DOMContentLoaded", () => {
-        //         new Mmenu( "#my-menu" );
-        //     }
-        // );
-    }
-
     render(){
         return (
-            <Cards/>
+            <main className={classes.App}>
+                <Header/>
+                <Cards/>
+                <Footer/>
+            </main>
         )
     }
 
