@@ -1,0 +1,12 @@
+.LoginButton{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.LoginButton_icon{
+    color: #222533;
+    font-size: 30px;
+}

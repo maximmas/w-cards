@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import classes from './Cards.css'
 import Card from '../../components/Card/Card'
 import NextCardsButton from '../../components/NextCardsButton/NextCardsButton'
-import Hamburger from '../../components/Hamburger/Hamburger'
+import {connect} from 'react-redux'
 
 import axios from 'axios'
 
@@ -10,71 +10,33 @@ import axios from 'axios'
 
 class Cards extends Component {
 
-    constructor() {
-        super()
-        this.state = {
-            cards: [],
-            isLoaded: false,
-            isRefresh: false
-        }
-    }
-
-    componentDidMount() {
-        axios.get('http://w-cards-server.local/wp-json/wp/v2/posts')
-            .then(res => {
-                    this.setState({
-                        cards: res.data,
-                        isLoaded: true
-                    })
-                }
-            )
-            .catch(error => console.log(error))
-    }
-
-    shuffleCards() {
-        let cards = this.state.cards
-        cards.sort(() => Math.random() - 0.5)
-        return cards.slice(0, 6)
-        // return cards.slice(0, 1)
-    }
-
-    onNextCards = () => {
-        this.setState({
-            isRefresh: !this.state.isRefresh
-        })
-    }
-
     onAddCard = () => {
         console.log('add card')
     }
 
     renderCards() {
-      let cards = this.shuffleCards()
-        return (cards.map((card, index) => {
+        return (this.props.cards.map((card, index) => {
                 return (
                     <Card
                         key={index}
                         id={card.id}
-                        text_orig={card.acf.text_original}
-                        text_trans={card.acf.text_translation}
-                        isRefresh={this.state.isRefresh}
+                        originalWord={card.originalWord}
+                        originalText={card.originalText}
+                        translation_1={card.translation_1}
+                        translation_2={card.translation_2}
                     />
                 )
             })
         )
     }
 
-
     render() {
         return (
             <div className={classes.Cards}>
-                {/*<Hamburger addCard={this.onAddCard}/>*/}
                 <div className={classes.Cards_content}>
                     {this.renderCards()}
-                </div>
-                <div className={classes.Cards_next}>
                     <NextCardsButton
-                        nextCards={this.onNextCards}
+                        nextCards={this.props.nextCards}
                     />
                 </div>
             </div>
@@ -82,4 +44,16 @@ class Cards extends Component {
     }
 }
 
-export default Cards
+function mapStateToProps(state) {
+    return {
+        cards: state.reducerCards.visibleCards
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        nextCards: () => dispatch({type: 'next'}),
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cards)

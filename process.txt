@@ -1,0 +1,12 @@
+Words N' Phrases
+
+TODO
+
+Redux  - псмотреть Minin 7
+HOC
+Error
+routing
+authorization
+
+After clock on Enter icon display Auth container instead of Cards
+По клику на гамбургер - менять класс у меню

@@ -10,7 +10,7 @@ const Hamburger = (props) => {
         <div className={classes.Hamburger}
              onClick={props.onShowMenu}
         >
-            <span className={icon_classes.join(' ')}></span>
+            <i className={icon_classes.join(' ')}></i>
 
         </div>
     )

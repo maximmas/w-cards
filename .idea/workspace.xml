@@ -2,23 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b8c05a-a801-4635-b601-d1b9647ac487" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Logo/Logo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Logo/Logo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Footer/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Header/Header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redux_sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoginButton/LoginButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoginButton/LoginButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MenuCloseButton/MenuCloseButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MenuCloseButton/MenuCloseButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MenuItem/MenuItem.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MenuItem/MenuItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Content/Content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Content/Content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Menu/Menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Menu/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/reducerAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/reducerCards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/reducerHeader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddCardButton/AddCardButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hamburger/Hamburger.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddCardButton/AddCardButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hamburger/Hamburger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hamburger/Hamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hamburger/Hamburger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NextCardsButton/NextCardsButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NextCardsButton/NextCardsButton.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Cards/Cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Cards/Cards.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Cards/Cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Cards/Cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +38,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,13 +61,38 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PSD Mockups/thefox/TheFox_Main_Files_v1-5/TheFox_PSDs_1_5/01_HOMEPAGE/01_01_home_CREATIVE_STYLE/01_01_001_home_creative_style_VERSION_01.psd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers/Page" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/containers/Page" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +116,20 @@
       <workItem from="1610891724861" duration="5174000" />
       <workItem from="1610911009016" duration="35000" />
       <workItem from="1610993745822" duration="4913000" />
-      <workItem from="1611165049212" duration="4620000" />
+      <workItem from="1611165049212" duration="4818000" />
+      <workItem from="1611490104129" duration="5864000" />
+      <workItem from="1611682371129" duration="6742000" />
+      <workItem from="1612112724768" duration="5639000" />
+      <workItem from="1612291599812" duration="5554000" />
+      <workItem from="1612336866436" duration="16000" />
+      <workItem from="1612461854371" duration="5674000" />
+      <workItem from="1612718510371" duration="5599000" />
+      <workItem from="1613067811826" duration="6434000" />
+      <workItem from="1613586121353" duration="3821000" />
+      <workItem from="1613816993204" duration="673000" />
+      <workItem from="1613818447700" duration="1729000" />
+      <workItem from="1614279388429" duration="2458000" />
+      <workItem from="1614790381825" duration="5558000" />
     </task>
     <servers />
   </component>

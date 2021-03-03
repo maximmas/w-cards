@@ -6,41 +6,28 @@ export default class Card extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            isClicked: false,
-            text: this.props.text_orig,
-            isRefresh: this.props.isRefresh
+            showOriginal:true
         }
     }
 
-    componentWillReceiveProps() {
-        if ( this.state.isRefresh !== this.props.isRefresh){
-            this.setState({
-                isRefresh: this.props.isRefresh,
-                text: this.props.text_orig,
-                isClicked: false,
-            })
-        }
-    }
-
-    onCardClickHandler(event) {
-        let text = (this.state.isClicked) ? this.props.text_orig : this.props.text_trans
+    clickCard() {
         this.setState({
-            isClicked: !this.state.isClicked,
-            text: text
+             showOriginal: !this.state.showOriginal
         })
     }
 
     render() {
         let cls = [classes.Card]
-        if (this.state.isClicked) {
-            cls.push(classes['clicked'])
-        }
+         if (!this.state.showOriginal) {
+             cls.push(classes['clicked'])
+         }
+        let text = (this.state.showOriginal) ? this.props.originalWord : this.props.translation_1
         return (
             <div
                 className={cls.join(' ')}
-                onClick={() => this.onCardClickHandler()}
+                onClick={()=>{this.clickCard()}}
             >
-                {this.state.text}
+            {text}
             </div>
         )
     }

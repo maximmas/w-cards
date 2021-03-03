@@ -1,0 +1,12 @@
+.MenuCloseButton{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.MenuCloseButton_icon{
+    color: #FFF;
+    font-size: 30px;
+}
